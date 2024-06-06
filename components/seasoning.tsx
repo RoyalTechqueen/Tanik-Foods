@@ -1,4 +1,5 @@
-export default function HealthyMeal() {
+
+export default function Seasoning() {
   return (
     <div>
       <div className="container mx-auto">
