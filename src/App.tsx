@@ -88,7 +88,7 @@ function App() {
       <section
         className="relative flex items-center justify-center min-h-screen bg-center bg-cover bg-no-repeat"
         style={{
-          backgroundImage: "url(./public/spice3.jpg)",
+          backgroundImage: "url(./spice3.jpg)",
         }}
         id="home"
       >
