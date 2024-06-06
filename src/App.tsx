@@ -1,5 +1,4 @@
 import "./index.css";
-import React from "react";
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
