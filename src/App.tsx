@@ -11,7 +11,7 @@ function App() {
       <header className="bg-white z-10 fixed top-0 left-0 right-0 shadow-md">
         <div className="mx-auto flex max-w-screen-2xl items-center justify-between px-4 py-6 sm:px-6">
           <div className="flex items-center">
-            <img src="./public/logo.png" alt="logo" className="h-12" />
+            <img src="./logo.png" alt="logo" className="h-12" />
           </div>
           <nav className="hidden sm:flex space-x-8 text-md">
             <a href="#about" className="hover:text-gray-600">
@@ -195,7 +195,7 @@ function App() {
 
               <div className="bg-white rounded-lg shadow-md">
                 <img
-                  src="./public/spice1.png"
+                  src="./spice1.png"
                   alt="Natural Seasonings"
                   className="w-full h-auto rounded-t-lg"
                 />
@@ -214,7 +214,7 @@ function App() {
               </div>
               <div className="bg-white rounded-lg shadow-md">
                 <img
-                  src="./public/spice1.png"
+                  src="./spice1.png"
                   alt="Natural Seasonings"
                   className="w-full h-auto rounded-t-lg"
                 />
@@ -233,7 +233,7 @@ function App() {
               </div>
               <div className="bg-white rounded-lg shadow-md">
                 <img
-                  src="./public/spice1.png"
+                  src="./spice1.png"
                   alt="Natural Seasonings"
                   className="w-full h-auto rounded-t-lg"
                 />
@@ -252,7 +252,7 @@ function App() {
               </div>
               <div className="bg-white rounded-lg shadow-md">
                 <img
-                  src="./public/spice1.png"
+                  src="./spice1.png"
                   alt="Natural Seasonings"
                   className="w-full h-auto rounded-t-lg"
                 />
@@ -300,7 +300,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -317,7 +317,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -334,7 +334,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -351,7 +351,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -368,7 +368,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -385,135 +385,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
-                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-                <a href="#" className="btn btn-primary">
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            {/* Repeat similar structure for other products */}
-          </div>
-        </div>
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Natural Seasonings
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Product Cards */}
-            <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="product-image.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
-                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-                <a href="#" className="btn btn-primary">
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="product-image.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
-                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-                <a href="#" className="btn btn-primary">
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="product-image.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
-                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-                <a href="#" className="btn btn-primary">
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="product-image.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
-                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-                <a href="#" className="btn btn-primary">
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="product-image.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
-                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-                <a href="#" className="btn btn-primary">
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="product-image.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
-                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-                <a href="#" className="btn btn-primary">
-                  Add to Cart
-                </a>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="product-image.jpg"
+                src="/spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -556,7 +428,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -573,7 +445,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -590,7 +462,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -607,7 +479,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -624,7 +496,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -641,7 +513,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="/spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -684,7 +556,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -699,6 +571,100 @@ function App() {
                 </a>
               </div>
             </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./spices1.png"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
+                <a href="#" className="btn btn-primary">
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./spices1.png"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
+                <a href="#" className="btn btn-primary">
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./spices1.png"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
+                <a href="#" className="btn btn-primary">
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./spices1.png"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
+                <a href="#" className="btn btn-primary">
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="/spices1.png"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
+                <a href="#" className="btn btn-primary">
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+            {/* Repeat similar structure for other products */}
+          </div>
+        </div>
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            Natural Seasonings
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Product Cards */}
             <div className="bg-white rounded-lg shadow-md">
               <img
                 src="product-image.jpg"
@@ -718,7 +684,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -735,7 +701,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -752,7 +718,7 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -769,7 +735,41 @@ function App() {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="product-image.jpg"
+                src="./spices1.png"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
+                <a href="#" className="btn btn-primary">
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./spices1.png"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+                <p className="text-gray-700 font-semibold mb-2">$19.99</p>
+                <a href="#" className="btn btn-primary">
+                  Add to Cart
+                </a>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="/spices1.png"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
@@ -792,7 +792,7 @@ function App() {
       {/* contact Page */}
       <section id="contact"></section>
 
-      <footer className="bg-white text-black p-5 relative">
+      <footer className="bg-gray-100 text-black p-5 relative">
         <div className="max-w-6xl mx-auto py-2 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
           <div className="flex flex-col mb-4 w-full ">
             <nav className=" flex flex-1 justify-center align-center space-x-10 text-md">
