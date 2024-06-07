@@ -1,11 +1,13 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Spices from "../components/spices";
 import Seasoning from "../components/seasoning";
 import HealthyMeal from "../components/healthymeals";
 import PastryMix from "../components/pastrymix";
 import Home from "./home";
+import "./index.css";
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <Routes>
@@ -17,6 +19,6 @@ function App() {
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
