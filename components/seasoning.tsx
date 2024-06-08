@@ -1,11 +1,12 @@
 import React from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { IoMdClose } from "react-icons/io";
-import { useState } from "react";
+// import { RxHamburgerMenu } from "react-icons/rx";
+// import { IoMdClose } from "react-icons/io";
+// import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Seasoning: React.FC = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
   const handleNavigate = (path: string) => {
     navigate(path);
@@ -18,22 +19,22 @@ const Seasoning: React.FC = () => {
             <img src="./logo.png" alt="logo" className="h-12" />
           </div>
           <div>
-            <h2 className="text-3xl font-bold mb-8 text-center">
+            <h2 className="text-3xl font-bold  text-center">
               Natural Seasonings
             </h2>
           </div>
           <nav className="hidden sm:flex space-x-8 text-md">
             <button
               className="px-2 py-1 bg-red-700 rounded-md font-medium text-center text-white rounded-lg "
-              onClick={() => handleNavigate("/")}
+              onClick={() => handleNavigate("/spices")}
             >
-              Back
+              <FaArrowLeft />
             </button>
             <button
               className="px-2 py-1 bg-red-700 rounded-md font-medium text-center text-white  rounded-lg "
-              onClick={() => handleNavigate("/seasoning")}
+              onClick={() => handleNavigate("/healthymeals")}
             >
-              Next
+              <FaArrowRight />
             </button>
             <button className="px-2 py-1 bg-red-700 rounded-md">
               <a
@@ -44,56 +45,18 @@ const Seasoning: React.FC = () => {
               </a>
             </button>
           </nav>
-          <button
-            className="block sm:hidden ml-4"
-            aria-label="Toggle Menu"
-            onClick={() => setShowMenu(!showMenu)}
-          >
-            {showMenu ? (
-              <IoMdClose className="text-2xl" />
-            ) : (
-              <RxHamburgerMenu className="text-2xl" />
-            )}
-          </button>
-        </div>
-
-        <div
-          className={`fixed top-0 left-0 h-full w-full bg-white shadow-lg transform ${
-            showMenu ? "translate-x-0" : "-translate-x-full"
-          } transition-transform duration-300 ease-in-out sm:hidden`}
-        >
-          <div className="flex justify-end p-4">
-            <button
-              className="text-2xl"
-              aria-label="Close Menu"
-              onClick={() => setShowMenu(false)}
-            >
-              <IoMdClose />
-            </button>
-          </div>
-          <nav className="flex flex-col items-center space-y-6 p-6">
+          <nav className="block sm:hidden space-x-5 text-sm">
             <button
               className="px-2 py-1 bg-red-700 rounded-md font-medium text-center text-white  rounded-lg "
-              onClick={() => handleNavigate("/seasoning")}
+              onClick={() => handleNavigate("/spices")}
             >
-              Next
+              <FaArrowLeft />
             </button>
-            <button className="px-2 py-1 bg-red-700 rounded-md">
-              <a
-                href="https://wa.me/+2348055284718"
-                className="inline-flex items-center justify-center  text-base font-medium text-center text-white bg-primary-700 rounded-lg "
-              >
-                Contact Us
-              </a>
-            </button>
-            <button className="px-2 py-2 bg-red-700 rounded-md">
-              <a
-                href="https://wa.me/+2348055284718"
-                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-                onClick={() => setShowMenu(false)}
-              >
-                Contact Us
-              </a>
+            <button
+              className="px-2 py-1 bg-red-700 rounded-md font-medium text-center text-white  rounded-lg "
+              onClick={() => handleNavigate("/healthymeals")}
+            >
+              <FaArrowRight />
             </button>
           </nav>
         </div>
@@ -112,7 +75,11 @@ const Seasoning: React.FC = () => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Fish Seasoning</h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  For Fish soups, fish grills, barbeque and lots more
+                </p>
+                <p>
+                  {" "}
+                  <strong> No Additives, No Chemical Preservatives.</strong>
                 </p>
               </div>
             </div>
@@ -123,9 +90,16 @@ const Seasoning: React.FC = () => {
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Aromatic Stew and Soup seasoning
+                </h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  For Nigerian delicacies, Vegetable sause (Efo riro, Elegusi),
+                  ogbono, white soup, ewedu, okro and lots more
+                </p>
+                <p>
+                  {" "}
+                  <strong> No Additives, No Chemical Preservatives.</strong>
                 </p>
               </div>
             </div>
@@ -136,9 +110,14 @@ const Seasoning: React.FC = () => {
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">Curry Powder</h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  Perfect for marinades, good flavour for meat, chicken,stew and
+                  Soups.{" "}
+                </p>
+                <p>
+                  {" "}
+                  <strong> No Additives, No Chemical Preservatives.</strong>
                 </p>
               </div>
             </div>
@@ -149,9 +128,15 @@ const Seasoning: React.FC = () => {
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Ginger, Garlic and Onion Powder
+                </h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  For Soups, Stews and Marinade
+                </p>
+                <p>
+                  {" "}
+                  <strong> No Additives, No Chemical Preservatives.</strong>
                 </p>
               </div>
             </div>
@@ -162,9 +147,14 @@ const Seasoning: React.FC = () => {
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">Meat Seasoning</h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  Perfect for meat marinades, meat stew and meat peppersoup.
+                  Also ideal for grilling and roasting meat.
+                </p>
+                <p>
+                  {" "}
+                  <strong> No Additives, No Chemical Preservatives.</strong>
                 </p>
               </div>
             </div>
@@ -175,9 +165,16 @@ const Seasoning: React.FC = () => {
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Multipurpose seasoning
+                </h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  Perfect for all rice dishes, pasta, beans, assorted stew, for
+                  barbeque and lots more
+                </p>
+                <p>
+                  {" "}
+                  <strong> No Additives, No Chemical Preservatives.</strong>
                 </p>
               </div>
             </div>
@@ -188,48 +185,74 @@ const Seasoning: React.FC = () => {
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Yaji Chilli Seasoning
+                </h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  To marinate meat, chicken, fish. For grilling, roasting or
+                  frying. Perfect sprinkles on indomie, yam fries and fried egg.
+                </p>
+                <p>
+                  {" "}
+                  <strong> No Additives, No Chemical Preservatives.</strong>
                 </p>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="./fish.jpg"
+                src="./peppersoup2.jpg"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  PepperSoup Seasoning
+                </h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  perfect for all forms of peppersoup(fish,meat or chicken).
+                  Tanik peppersoup gives you the original taste you desire.
+                </p>
+                <p>
+                  {" "}
+                  <strong> No Additives, No Chemical Preservatives.</strong>
                 </p>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="./fish.jpg"
+                src="./rice enchant.jpg "
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Rice Enchant Jollof/Fried rice Seasoning
+                </h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  Perfect for jollof rice, spaghetti, fried rice and Stir Fries.
+                  <p>
+                    {" "}
+                    <strong> No Additives, No Chemical Preservatives.</strong>
+                  </p>
                 </p>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="./fish.jpg"
+                src="./chicken.jpg"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">
+                  Chicken Seasoning
+                </h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  For chicken marinade, grills, chicken stew and lots more.
+                  <p>
+                    {" "}
+                    <strong> No Additives, No Chemical Preservatives.</strong>
+                  </p>
                 </p>
               </div>
             </div>

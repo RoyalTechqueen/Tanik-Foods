@@ -1,136 +1,208 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-
-export default function Spices() {
+const Spices: React.FC = () => {
+  const navigate = useNavigate();
+  const handleNavigate = (path: string) => {
+    navigate(path);
+  };
   return (
     <div>
+      <header className="bg-white fixed  z-10 top-0 left-0 right-0 shadow-md">
+        <div className="mx-auto flex max-w-screen-2xl items-center justify-between px-4 py-6 sm:px-6">
+          <div className="flex items-center">
+            <img src="./logo.png" alt="logo" className="h-12" />
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold  text-center">
+              Natural Spices
+            </h2>
+          </div>
+          <nav className="hidden sm:flex space-x-8 text-md">
+            <button
+              className="px-2 py-1 bg-red-700 rounded-md font-medium text-center text-white rounded-lg "
+              onClick={() => handleNavigate("/")}
+            >
+              <FaArrowLeft />
+            </button>
+            <button
+              className="px-2 py-1 bg-red-700 rounded-md font-medium text-center text-white  rounded-lg "
+              onClick={() => handleNavigate("/seasoning")}
+            >
+              <FaArrowRight />
+            </button>
+            <button className="px-2 py-1 bg-red-700 rounded-md">
+              <a
+                href="https://wa.me/+2348055284718"
+                className="inline-flex items-center justify-center  text-base font-medium text-center text-white bg-primary-700 rounded-lg "
+              >
+                Contact Us
+              </a>
+            </button>
+          </nav>
+          <nav className="block sm:hidden space-x-5 text-sm">
+            <button
+              className="px-2 py-1 bg-red-700 rounded-md font-medium text-center text-white  rounded-lg "
+              onClick={() => handleNavigate("/")}
+            >
+              <FaArrowLeft />
+            </button>
+            <button
+              className="px-2 py-1 bg-red-700 rounded-md font-medium text-center text-white  rounded-lg "
+              onClick={() => handleNavigate("/seasoning")}
+            >
+              <FaArrowRight />
+            </button>
+          </nav>
+        </div>
+      </header>
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">
-          Natural Seasonings
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Product Cards */}
-          <div className="bg-white rounded-lg shadow-md">
-            <img
-              src="product-image.jpg"
-              alt="Product Name"
-              className="w-full h-auto rounded-t-lg"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-              <p className="text-gray-700 mb-4">
-                Brief description of the product.
-              </p>
-              <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-              <a href="#" className="btn btn-primary">
-                Add to Cart
-              </a>
+        <div className="mx-auto h-full w-full overflow-auto ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            {/* Product Cards */}
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./fish.jpg"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Fish Seasoning</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./aromatic.jpg"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./curry.jpg"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./ginger garlic.jpg"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./meat.jpg"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./multipurpose.jpg"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./yaji.jpg"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./fish.jpg"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./fish.jpg"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <img
+                src="./fish.jpg"
+                alt="Product Name"
+                className="w-full h-auto rounded-t-lg"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <p className="text-gray-700 mb-4">
+                  Brief description of the product.
+                </p>
+              </div>
             </div>
           </div>
-          <div className="bg-white rounded-lg shadow-md">
-            <img
-              src="product-image.jpg"
-              alt="Product Name"
-              className="w-full h-auto rounded-t-lg"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-              <p className="text-gray-700 mb-4">
-                Brief description of the product.
-              </p>
-              <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-              <a href="#" className="btn btn-primary">
-                Add to Cart
-              </a>
-            </div>
-          </div>
-          <div className="bg-white rounded-lg shadow-md">
-            <img
-              src="product-image.jpg"
-              alt="Product Name"
-              className="w-full h-auto rounded-t-lg"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-              <p className="text-gray-700 mb-4">
-                Brief description of the product.
-              </p>
-              <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-              <a href="#" className="btn btn-primary">
-                Add to Cart
-              </a>
-            </div>
-          </div>
-          <div className="bg-white rounded-lg shadow-md">
-            <img
-              src="product-image.jpg"
-              alt="Product Name"
-              className="w-full h-auto rounded-t-lg"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-              <p className="text-gray-700 mb-4">
-                Brief description of the product.
-              </p>
-              <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-              <a href="#" className="btn btn-primary">
-                Add to Cart
-              </a>
-            </div>
-          </div>
-          <div className="bg-white rounded-lg shadow-md">
-            <img
-              src="product-image.jpg"
-              alt="Product Name"
-              className="w-full h-auto rounded-t-lg"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-              <p className="text-gray-700 mb-4">
-                Brief description of the product.
-              </p>
-              <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-              <a href="#" className="btn btn-primary">
-                Add to Cart
-              </a>
-            </div>
-          </div>
-          <div className="bg-white rounded-lg shadow-md">
-            <img
-              src="product-image.jpg"
-              alt="Product Name"
-              className="w-full h-auto rounded-t-lg"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-              <p className="text-gray-700 mb-4">
-                Brief description of the product.
-              </p>
-              <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-              <a href="#" className="btn btn-primary">
-                Add to Cart
-              </a>
-            </div>
-          </div>
-          <div className="bg-white rounded-lg shadow-md">
-            <img
-              src="product-image.jpg"
-              alt="Product Name"
-              className="w-full h-auto rounded-t-lg"
-            />
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-              <p className="text-gray-700 mb-4">
-                Brief description of the product.
-              </p>
-              <p className="text-gray-700 font-semibold mb-2">$19.99</p>
-              <a href="#" className="btn btn-primary">
-                Add to Cart
-              </a>
-            </div>
-          </div>
-          {/* Repeat similar structure for other products */}
         </div>
       </div>
+      <footer className="bg-gray-100 text-black p-5 relative">
+        <div className="max-w-6xl mx-auto py-2 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
+          <p className="text-sm text-center">
+            &copy; {new Date().getFullYear()} Tanik Foods. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
-}
+};
+
+export default Spices;

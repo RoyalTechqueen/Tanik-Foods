@@ -15,10 +15,12 @@ const Carousel: React.FC = () => {
     "./blasmin.jpg",
     "./chocolate.jpg",
     "./cinger.jpg",
+    "./chicken.jpg",
     "./ginger.jpg",
     "./oatplantain.jpg",
     "./oatwheat.jpg",
     "./pancake.jpg",
+    "./rice enchant.jpg",
     "./red velvet.jpg",
     "./vanilla.jpg",
   ];
