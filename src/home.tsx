@@ -132,7 +132,7 @@ const Home: React.FC = () => {
           <p className="max-w-2xl mb-6 font-medium mt-3 text-gray-300 lg:mb-8 md:text-lg lg:text-xl">
             Where Spice is Life and Health is wealth.
           </p>
-          <div className="space-x-5">
+          <div className="space-x-5 space-y-3">
             <button className="px-2 py-2 bg-red-700 rounded-md">
               <a
                 href="#services"
@@ -362,7 +362,7 @@ const Home: React.FC = () => {
                 </h2>
 
                 <a href="mailto:tanikfoods.gmail.com" target="_blank">
-                  <p className="mt-2 text-sm text-blue-500 ">
+                  <p className="mt-2 text-sm  text-blue-500">
                     tanikfoods.gmail.com
                   </p>
                 </a>
@@ -377,24 +377,32 @@ const Home: React.FC = () => {
                   Location
                 </h2>
 
-                <p className="mt-2 text-sm text-blue-500">
+                <p className="mt-2 text-sm ">
                   Opp Kiddiz Medical Center, Western Reserviour road, Ilorin,
                   Kwara State, Nigeria
                 </p>
               </div>
 
               <div>
-                <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100 ">
+                <span className="inline-block p-3  rounded-full bg-blue-100 ">
                   <FaPhoneAlt className="h-5 w-5" />
                 </span>
 
                 <h2 className="mt-4 text-base font-medium text-gray-800 ">
                   Phone
                 </h2>
-
-                <p className="mt-2 text-sm text-blue-500">
-                  +2348055284718, +2347036104433
-                </p>
+                <a
+                  href="tel:+2348055284718"
+                  className="mt-2 text-sm text-blue-500"
+                >
+                  +2348055284718
+                </a>
+                <a
+                  href="tel:+2347036104433"
+                  className="mt-2 text-sm text-blue-500"
+                >
+                  +2347036104433
+                </a>
               </div>
             </div>
 

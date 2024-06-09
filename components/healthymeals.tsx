@@ -69,9 +69,7 @@ const Healthymeal: React.FC = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Ginger Tea</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
@@ -84,9 +82,7 @@ const Healthymeal: React.FC = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   Cinger(Cinnamon nd Ginger) Tea
                 </h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
@@ -99,9 +95,7 @@ const Healthymeal: React.FC = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   Blasmin(Black seeds and mint) Tea
                 </h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
@@ -114,9 +108,7 @@ const Healthymeal: React.FC = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   Zobo(Hibiscus) Tea
                 </h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
@@ -135,40 +127,42 @@ const Healthymeal: React.FC = () => {
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="./curry.jpg"
+                src="./wheat.jpg"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">Wheat Flour</h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  Healthy wheat meal can be taken as swallow or as cereals. Can
+                  also be used to make healthy pastries such as chinchin,
+                  cookies or cake.
                 </p>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="./ginger garlic.jpg"
+                src="./unripe plantain.jpg"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">Unripe Plantain Flour</h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  Healthy Swallow option.
                 </p>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
               <img
-                src="./meat.jpg"
+                src="./sweet potato.jpg"
                 alt="Product Name"
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
+                <h3 className="text-xl font-semibold mb-2">Sweet Potato Flour</h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  Healthy Sweet potato Flour.
                 </p>
               </div>
             </div>
@@ -181,7 +175,7 @@ const Healthymeal: React.FC = () => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Oat Plantain</h3>
                 <p className="text-gray-700 mb-4">
-                  Brief description of the product.
+                  Healthy Combination of Plantain and Oats. Good for diabetic patient.
                 </p>
               </div>
             </div>

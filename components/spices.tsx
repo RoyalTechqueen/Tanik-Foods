@@ -15,9 +15,7 @@ const Spices: React.FC = () => {
             <img src="./logo.png" alt="logo" className="h-12" />
           </div>
           <div>
-            <h2 className="text-3xl font-bold  text-center">
-              Natural Spices
-            </h2>
+            <h2 className="text-3xl font-bold  text-center">Natural Spices</h2>
           </div>
           <nav className="hidden sm:flex space-x-8 text-md">
             <button
@@ -57,138 +55,98 @@ const Spices: React.FC = () => {
           </nav>
         </div>
       </header>
-      <div className="container mx-auto">
+
+      <div className="container mx-auto mt-20">
         <div className="mx-auto h-full w-full overflow-auto ">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {/* Product Cards */}
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="./fish.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Fish Seasoning</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                <h3 className="text-xl font-medium mb-2">Star Anise</h3>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="./aromatic.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                <h3 className="text-xl font-semibold mb-2">Castor seeds</h3>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="./curry.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                <h3 className="text-xl font-semibold mb-2">Rosemary</h3>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="./ginger garlic.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                <h3 className="text-xl font-semibold mb-2">Cinnamon powder</h3>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="./meat.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                <h3 className="text-xl font-semibold mb-2">Gorontula</h3>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="./multipurpose.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                <h3 className="text-xl font-semibold mb-2">Black pepper</h3>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="./yaji.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                <h3 className="text-xl font-semibold mb-2">Anise seeds</h3>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="./fish.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                <h3 className="text-xl font-semibold mb-2">Cameroon pepper</h3>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="./fish.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                <h3 className="text-xl font-semibold mb-2">Cloves</h3>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md">
-              <img
-                src="./fish.jpg"
-                alt="Product Name"
-                className="w-full h-auto rounded-t-lg"
-              />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Product Name</h3>
-                <p className="text-gray-700 mb-4">
-                  Brief description of the product.
-                </p>
+                <h3 className="text-xl font-semibold mb-2">Moringa Seeds </h3>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Neem Powder</h3>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Tumeric</h3>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Oregano</h3>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Fennel</h3>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Fenugreek</h3>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Chia Seeds</h3>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Moringa Powder</h3>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-md">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Flax Seeds</h3>
               </div>
             </div>
           </div>
