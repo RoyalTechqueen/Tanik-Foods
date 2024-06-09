@@ -361,7 +361,7 @@ const Home: React.FC = () => {
                   Email
                 </h2>
 
-                <a href="mailto:tanikfoods.gmail.com" target="_blank">
+                <a href="mailto:tanikfoods@gmail.com" target="_blank">
                   <p className="mt-2 text-sm  text-blue-500">
                     tanikfoods@gmail.com
                   </p>
